@@ -1,0 +1,134 @@
+body{
+    background: url(/public/images/arabesque.png);
+    background-color: darkgray
+}
+.memeContainer{
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    color: white;
+    border: 10px solid #1f1f38;
+    background: #1f1f38;
+}
+.memeContainer div{
+    border-radius: 10px;
+    background-color: var(--color-white);
+    background-color:white;
+}
+:root{
+    --color-bg: #1f1f38;
+    --color-bg-variant: #2c2c6c;
+    --color-primary: #4db5ff;
+    --color-txt: rgb(149, 202, 218);
+    --color-txt2: rgb(177, 207, 205);
+    --color-white: rgb(228, 228, 228);
+    --color-white2: rgb(195, 206, 200);
+    --color-light: rgba(255, 255, 255, 0.6);
+    --color-primary-variant: rgba(77, 181, 255, 0.4);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: linear-gradient(90deg, goldenrod, gold);
+    background: rgb(31, 31, 56);
+    padding: 1rem 2rem;
+}
+
+.header > .brand {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.brand > img {
+    width: 84px;
+}
+.header h5{
+    font-size: 1.1em;
+    padding: 1rem;
+}
+.header h4{
+    font-size: 1.5em;
+}
+.meme{
+    width: 90%;
+    margin: auto;
+}
+.form {
+    display: grid;
+    padding: 3em;
+    gap: 1.2em;
+}
+.form > input {
+    grid-row: 1;
+    row-gap: 2em;
+    padding: 0.8em;
+    border-radius: 5px;
+    width: 100%;
+    border:none;
+    box-shadow: 1px 1px 2px black;
+}
+.form > button {
+    border: 2px solid #1f1f38;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    padding: 0.8em;
+    border-radius: 7px;
+    background: #1f1f38;
+    transition: all .3s ease;
+    font-size: medium;
+    box-shadow: 1px 1px 2px black;
+}
+.form > button:hover{
+    border: 2px dashed var(--color-txt);;
+    color: var(--color-txt);
+}
+.memeImage{
+    position: relative;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.topText, .bottomText{
+    position: absolute;
+    text-align: center;
+    color: gold;
+    font-size: xxx-large;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px black;
+}
+.topText{
+    top: 0%;
+    left: 0;
+}
+.bottomText{
+    bottom: 5%;
+    right: 0;
+}
+.memeImage img{
+    width: 100%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 5px black;
+}
+
+@media screen and (max-width: 627px){
+    .memeContainer{
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 827px){
+    .memeContainer{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .memeContainer{
+        width: 80%;
+        margin: auto;
+    }
+}
